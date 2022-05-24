@@ -1,27 +1,53 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace check1
+namespace ConsoleApp5
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int i;
-            Console.Write("Enter a Number : ");
-            i = int.Parse(Console.ReadLine());
-            if (i % 2 == 0)
+
+            Console.Write("enter some value");
+            int choice;
+
+
+
+            choice = Convert.ToInt32(Console.ReadLine());
+
+            switch (choice)
             {
-                Console.Write("Entered Number is an Even Number");
-                Console.Read();
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
+                case 7:
+                    Console.WriteLine("Sunday");
+                    break;
+                default:
+                    Console.WriteLine("Hi, I am a default case.");
+                    break;
+
             }
-            else
-            {
-                Console.Write("Entered Number is an Odd Number");
-                Console.Read();
-            }
+            Console.ReadLine();
+
+
+
         }
     }
 }
+
+
